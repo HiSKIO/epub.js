@@ -96,7 +96,7 @@ class IframeView {
 			this.iframe.sandbox += " allow-scripts";
 		}
 		if (this.settings.allowPopups) {
-			this.iframe.sandbox += " allow-popups";
+			this.iframe.sandbox += " allow-popups allow-popups-to-escape-sandbox";
 		}
 		
 		this.iframe.setAttribute("enable-annotation", "true");
